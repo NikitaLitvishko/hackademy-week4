@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Form</title>
+</head>
+
+<body>
+  <div class="container pt-5">
+    <h1 id="title">Title of form</h1>
+    <p id="description">Survey form example</p>
+    <form class="mt-5" id="survey-form">
+      <div class="row">
+        <div class="col mb-3">
+          <label for="name" class="name-label mb-2" id="name-label">Name</label>
+          <input class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="col mb-3">
+          <label for="email" class="email-label mb-2" id="email-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="number" class="name-label mb-2" id="number-label">Age(18-70)</label>
+          <input type="number" min="18" max="70" class="form-control" id="number" placeholder="Enter your age">
+        </div>
+        <div class="col mb-3">
+          <label class="name-label mb-2" for="dropdown">Example of dropdown</label>
+          <select id="dropdown" class="form-select">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-3">
+        <p class="mb-2">Example of radio buttons</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radio-button" id="first" value="first" checked>
+          <label class="form-check-label" for="male">First</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radio-button" id="second" value="second">
+          <label class="form-check-label" for="female">Second</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radio-button" id="third" value="third">
+          <label class="form-check-label" for="other">Third</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radio-button" id="fourth" value="fourth">
+          <label class="form-check-label" for="private">Fourth</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <p class="mb-2">Example of checkboxes:</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="ex-checkbox-1" value="one">
+          <label class="form-check-label" for="ex-checkbox-1">One</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="ex-checkbox-2" value="two">
+          <label class="form-check-label" for="ex-checkbox-2">Two</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="ex-checkbox-3" value="three">
+          <label class="form-check-label" for="ex-checkbox-3">Three</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="ex-checkbox-4" value="four">
+          <label class="form-check-label" for="ex-checkbox-4">Four</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="comments" class="form-label">Comments</label>
+        <textarea class="form-control" id="comments" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
